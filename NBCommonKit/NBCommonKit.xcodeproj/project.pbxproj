@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		054E37552447B7BA0007DD87 /* NBCommonKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 054E37532447B7BA0007DD87 /* NBCommonKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		054E375D2447BA4C0007DD87 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054E375C2447BA4C0007DD87 /* UIView+Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		054E37502447B7BA0007DD87 /* NBCommonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NBCommonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		054E37532447B7BA0007DD87 /* NBCommonKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBCommonKit.h; sourceTree = "<group>"; };
 		054E37542447B7BA0007DD87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		054E375C2447BA4C0007DD87 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +48,19 @@
 		054E37522447B7BA0007DD87 /* NBCommonKit */ = {
 			isa = PBXGroup;
 			children = (
+				054E375B2447BA130007DD87 /* Extension */,
 				054E37532447B7BA0007DD87 /* NBCommonKit.h */,
 				054E37542447B7BA0007DD87 /* Info.plist */,
 			);
 			path = NBCommonKit;
+			sourceTree = "<group>";
+		};
+		054E375B2447BA130007DD87 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				054E375C2447BA4C0007DD87 /* UIView+Layout.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +106,7 @@
 				TargetAttributes = {
 					054E374F2447B7BA0007DD87 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -131,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054E375D2447BA4C0007DD87 /* UIView+Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 		054E37592447B7BA0007DD87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 54XQLGWFP9;
@@ -276,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nadavbarlev.NBCommonKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +299,7 @@
 		054E375A2447B7BA0007DD87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 54XQLGWFP9;
